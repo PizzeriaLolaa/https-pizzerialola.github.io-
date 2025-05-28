@@ -1,0 +1,135 @@
+.menu {
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .menu-heading {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .menu-heading2{
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+  }
+  
+  
+  .menu-section {
+    margin-bottom: 30px;
+  }
+  
+  .menu-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .menu-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-description {
+    margin-left: 10px;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .item-price {
+    color: #777;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .menu-item {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-heading {
+      margin-top: 100px;
+      font-size: 2em;
+    }
+  
+    .menu-section h2 {
+      font-size: 1.5em;
+      color: #333;
+    }
+  
+    .item-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-name,
+    .item-info {
+      font-size: 1em;
+    }
+  
+    .menu-item {
+      font-size: 1em;
+    }
+  
+    .item-description {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .menu-heading {
+      margin-top: 100px;
+      font-size: 1.8em;
+    }
+    .menu-section h2 {
+      font-size: 1.3em;
+      color: #333;
+    }
+  
+    .item-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-name,
+    .item-info {
+      font-size: 0.9em;
+      display: flex;
+      justify-content: space-between;
+      padding: 3px;
+    }
+  
+    .menu-item {
+      font-size: 0.9em;
+    }
+  
+    .item-description {
+      margin-left: 0;
+      font-size: 0.8em;
+    }
+  }
+  

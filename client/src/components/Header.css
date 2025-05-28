@@ -1,0 +1,149 @@
+
+  .heading{
+    font-size: 2.8em;
+  }
+  header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+    background-color: #fa5b5b;
+    /* Updated background color */
+  }
+  
+  header span {
+    padding: 20px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  header ul li {
+    padding: 0 40px;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle svg {
+    width: 30px;
+    height: auto;
+    fill: black;
+  }
+  
+  .scrolled {
+    background-color: #fa5b5b;
+    backdrop-filter: none;
+  }
+  
+  header.transition {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .heading{
+        font-size: 2.2em;
+      }
+    .menu-toggle {
+      display: block;
+    }
+  
+    header {
+      background-color: #fa5b5b;
+      /* Updated background color */
+      position: fixed;
+    }
+  
+    header ul {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      background-color: transparent;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    header ul.open {
+      display: block;
+      padding: 20px 0;
+    }
+  
+    header ul.open li {
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #fa5b5b;
+      text-align: start;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .heading{
+        font-size: 1.5em;
+        margin-left: 10px;
+      }
+    .menu-toggle {
+      display: block;
+    }
+  
+    header {
+      background-color: #fa5b5b;
+      /* Updated background color */
+      position: fixed;
+    }
+  
+    header ul {
+      display: none;
+      position: fixed;
+      top: -100%;
+      right: 0;
+      width: 100%;
+      background-color: transparent;
+      text-align: center;
+      z-index: 999;
+      transition: top 0.9s ease;
+      color: black;
+    }
+  
+    header ul.open {
+      display: block;
+      top: 70px;
+      padding: 20px 0;
+    }
+  
+    header ul.open li {
+      display: block;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #fa5b5b;
+      text-align: start;
+    }
+  }
